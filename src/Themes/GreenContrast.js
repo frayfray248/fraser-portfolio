@@ -1,4 +1,5 @@
 export default {
+    headerColor: '#ffffff',
     color1 : '#61892F',
     color2 : '#86C232',
     color3 : '#222629',

@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
         height : 100%;
     }
 
+    h1 {
+        color: ${props => props.theme.headerColor};
+    }
+
     body {
         background-color: ${props => props.theme.color3};
         color: ${props => props.theme.color2};
