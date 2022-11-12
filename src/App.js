@@ -6,6 +6,7 @@ import theme from './Themes/GreenContrast'
 import Landing from './Components/Landing'
 import About from './Components/About'
 import Projects from './Components/Projects'
+import Skills from './Components/Skills'
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -25,6 +26,7 @@ const App = () => (
         <StyledNavbar />
         <About />
         <Projects />
+        <Skills />
     </ThemeProvider>
 )
 
