@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 
 const StyledNavbar = styled(Navbar)`
     background-color: ${props => props.theme.color3};
+    box-shadow: 10px 0px 10px black;
 `
 
 const StyledLink = styled(Nav.Link)`
@@ -21,6 +22,7 @@ const StyledBrand = styled(Navbar.Brand)`
 
 const StyledSVG = styled.svg`
     color: ${props => props.theme.color2};
+    transform : rotate(180deg);
     transition: all 0.5s;
 `
 
@@ -29,6 +31,10 @@ const StyledToggle = styled(Navbar.Toggle)`
     &:focus {
         box-shadow: none;
     }
+`
+
+const StyledNav = styled(Nav)`
+    width: 100%;
 `
 
 const PortfolioNavBar = () => {
@@ -42,24 +48,24 @@ const PortfolioNavBar = () => {
     }
 
     return (
-    <StyledNavbar expand="lg">
+    <StyledNavbar fixed="top" expand="md" >
         <Container>
             <StyledBrand href="/"><Brand /></StyledBrand>
             <StyledToggle  aria-controls="basic-navbar-nav">
                 <StyledSVG
                     id="navToggleSVG"
-                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-chevron-double-down" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                     <path fillRule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                 </StyledSVG>
             </StyledToggle>
             <Navbar.Collapse id="basic-navbar-nav" onEntering={onEntering} onExiting={onExiting}>
-                <Nav className="me-auto">
-                    <StyledLink href="#home">1:\ About</StyledLink>
-                    <StyledLink href="#link">2:\ Projects</StyledLink>
-                    <StyledLink href="#link">3:\ Skills</StyledLink>
-                    <StyledLink href="#link">4:\ Contact</StyledLink>
-                </Nav>
+                <StyledNav className="justify-content-center">
+                    <StyledLink href="#about">&lt;About /&gt;</StyledLink>
+                    <StyledLink href="#projects">&lt;Projects /&gt;</StyledLink>
+                    <StyledLink href="#skills">&lt;Skills /&gt;</StyledLink>
+                    <StyledLink href="#contact">&lt;Contact /&gt;</StyledLink>
+                </StyledNav>
             </Navbar.Collapse>
         </Container>
     </StyledNavbar>
