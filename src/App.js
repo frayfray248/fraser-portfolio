@@ -9,6 +9,8 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 
+import face from './res/labroom.jpeg'
+
 const GlobalStyle = createGlobalStyle`
     html, body {
         height : 100%;
@@ -25,6 +27,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledNavbar />
+        <Landing img={face}/>
         <About />
         <Projects />
         <Skills />
