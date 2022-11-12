@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import styled from 'styled-components'
+import Brand from './Brand'
 import { useEffect } from 'react'
 
 
@@ -43,7 +44,7 @@ const PortfolioNavBar = () => {
     return (
     <StyledNavbar expand="lg">
         <Container>
-            <StyledBrand href="#home">Fraser</StyledBrand>
+            <StyledBrand href="/"><Brand /></StyledBrand>
             <StyledToggle  aria-controls="basic-navbar-nav">
                 <StyledSVG
                     id="navToggleSVG"
