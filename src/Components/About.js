@@ -19,7 +19,7 @@ const StyledH1 = styled.h1`
 
 const StyledP = styled.p`
     width : 28rem;
-    font-size: x-large;
+    font-size: large;
 `
 
 const StyledImage = styled.img`
@@ -41,7 +41,9 @@ const About = ({img}) => {
                         <StyledH1>About Me</StyledH1>
                         
                         <StyledP>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Greetings! My name is Fraser and I like to play with JavaScript. My interest in computers came from map editors from my favorite RTS games. 
+                            Down the line I took a computer science diploma program at Camosun College and became fascinated by programming. After I completed my WordPress Capstone project 
+                            for Victoria company Three Trees Technical, I knew I wanted to become a web developer! 
                         </StyledP>
                     </Col>
                 </StyledRow >

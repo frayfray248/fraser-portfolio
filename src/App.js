@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from 'styled-components'
 import theme from './Themes/GreenContrast'
 import Landing from './Components/Landing'
+import About from './Components/About'
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -21,7 +22,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledNavbar />
-        <Landing />
+        <About />
     </ThemeProvider>
 )
 
