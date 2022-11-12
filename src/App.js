@@ -7,6 +7,7 @@ import Landing from './Components/Landing'
 import About from './Components/About'
 import Projects from './Components/Projects'
 import Skills from './Components/Skills'
+import Contact from './Components/Contact'
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -27,6 +28,7 @@ const App = () => (
         <About />
         <Projects />
         <Skills />
+        <Contact />
     </ThemeProvider>
 )
 
