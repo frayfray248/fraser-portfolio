@@ -1,8 +1,10 @@
 import Container from 'react-bootstrap/container'
 import Row from 'react-bootstrap/row'
-import Col from 'react-bootstrap/col'
 import styled from 'styled-components'
-import Fade from 'react-bootstrap/Fade';
+import Fade from 'react-bootstrap/Fade'
+import Project from './Project'
+import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
+
 
 const StyledContainer = styled(Container)`
     height: 100vh;
@@ -31,16 +33,13 @@ const Projects = () => {
     return (
         <StyledFade in appear timeout={3000}>
             <StyledContainer id="projects" fluid="md" className="justify-content-center">
-                <StyledRow className="text-center align-items-center ">
-                    <Col align="center" >
-                        <StyledH1 >Projects</StyledH1>
-                        <h2>Project 1</h2>
-                        <StyledP>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</StyledP>
-                        <h2>Project 2</h2>
-                        <StyledP>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</StyledP>
-                        <h2>Project 3</h2>
-                        <StyledP>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</StyledP>
-                    </Col>
+                <StyledRow className="text-center align-items-center justify-content-center">
+                    <StyledH1>Projects</StyledH1>
+                    <Project
+                        title='Three Trees Calendar'
+                        img={threeTreesPic}
+                        description='The Three Trees Calendar is a class/workshop manager and calendar for WordPress'
+                        projectUrl="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php" />
                 </StyledRow >
             </StyledContainer>
         </StyledFade>
