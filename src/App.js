@@ -6,7 +6,7 @@ import theme from './Themes/GreenContrast'
 import Landing from './Components/Landing'
 import About from './Components/About'
 import Projects from './Components/Projects'
-import Skills from './Components/Skills'
+import Experience from './Components/Experience'
 import Contact from './Components/Contact'
 
 import face from './res/labroom.jpeg'
@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
         height : 100%;
     }
 
-    h1 {
+    h1, h2 {
         color: ${props => props.theme.headerColor};
     }
 
@@ -34,7 +34,7 @@ const App = () => (
         <Landing img={face}/>
         <About />
         <Projects />
-        <Skills />
+        <Experience />
         <Contact />
     </ThemeProvider>
 )
