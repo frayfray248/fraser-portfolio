@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'
 import Project from './Project'
 import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
+import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 
 
 const StyledContainer = styled(Container)`
@@ -38,8 +39,15 @@ const Projects = () => {
                     <Project
                         title='Three Trees Calendar'
                         img={threeTreesPic}
-                        description='The Three Trees Calendar is a class/workshop manager and calendar for WordPress'
-                        projectUrl="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php" />
+                        description='A class/workshop manager WordPress plugin'
+                        projectUrl="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php" 
+                        />
+                        <Project
+                        title='Evolution Sim'
+                        img={evolutionSimPic}
+                        description='A web app that simulates the natural selection of 2D lifeforms'
+                        repoUrl={"https://github.com/frayfray248/evolution-sim"}
+                        />
                 </StyledRow >
             </StyledContainer>
         </StyledFade>
