@@ -14,6 +14,7 @@ const StyledCol = styled(Col)`
     border-radius: 10px;
     max-width: 300px;
     transition: all 0.5s;
+    height: 500px;
     &:hover {
         background: ${props => props.theme.color4};
     }
@@ -41,13 +42,16 @@ transition: all 0.5s;
 }
 `
 
-const Project = ({ title, description, img, projectUrl, repoUrl}) => (
+const Project = ({ title, description, img, projectUrl, repoUrl }) => (
     <StyledCol className="m-2 p-2">
-        <StyledImage src={img}></StyledImage>
+        <StyledImage className="mb-2" src={img}></StyledImage>
         <h2>{title}</h2>
         <p>{description}</p>
-        {projectUrl? <a href={projectUrl}><StyledLinkIcon /></a> : ""}
-        {repoUrl? <a href={repoUrl}><StyledGitHubIcon /></a> : ""}
+        <footer>
+            {projectUrl ? <a href={projectUrl}><StyledLinkIcon /></a> : ""}
+            {repoUrl ? <a href={repoUrl}><StyledGitHubIcon /></a> : ""}
+        </footer>
+
     </StyledCol>
 )
 
