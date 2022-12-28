@@ -13,6 +13,12 @@ const StyledNavbar = styled(Navbar)`
 
 const StyledLink = styled(Nav.Link)`
     color: ${props => props.theme.color2};
+    &.active {
+        color: ${props => props.theme.color2}!important;
+    }
+    &:hover {
+        color: ${props => props.theme.headerColor}!important;
+    }
 `
 
 const StyledBrand = styled(Navbar.Brand)`
