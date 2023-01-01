@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const StyledUL = styled.ul`
     text-align: left;
+    max-width: 800px;
 `
 
 const StyledP = styled.p`
