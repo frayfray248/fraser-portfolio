@@ -13,6 +13,12 @@ const StyledNavbar = styled(Navbar)`
 
 const StyledLink = styled(Nav.Link)`
     color: ${props => props.theme.color2};
+    &.active {
+        color: ${props => props.theme.color2}!important;
+    }
+    &:hover {
+        color: ${props => props.theme.headerColor}!important;
+    }
 `
 
 const StyledBrand = styled(Navbar.Brand)`
@@ -63,7 +69,7 @@ const PortfolioNavBar = () => {
                 <StyledNav className="justify-content-center">
                     <StyledLink href="#about">&lt;About /&gt;</StyledLink>
                     <StyledLink href="#projects">&lt;Projects /&gt;</StyledLink>
-                    <StyledLink href="#skills">&lt;Skills /&gt;</StyledLink>
+                        <StyledLink href="#skills">&lt;Experiance /&gt;</StyledLink>
                     <StyledLink href="#contact">&lt;Contact /&gt;</StyledLink>
                 </StyledNav>
             </Navbar.Collapse>
