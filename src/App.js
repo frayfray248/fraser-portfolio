@@ -9,7 +9,7 @@ import Projects from './Components/Projects'
 import Experience from './Components/Experience'
 import Contact from './Components/Contact'
 
-import face from './res/labroom.jpeg'
+import face from './res/labroom.png'
 
 const GlobalStyle = createGlobalStyle`
     html, body {
