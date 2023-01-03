@@ -1,4 +1,4 @@
-import Col from "react-bootstrap/col"
+import Col from "react-bootstrap/Col"
 import styled from 'styled-components'
 import { ReactComponent as LinkIcon } from '../res/link-45deg.svg'
 import { ReactComponent as GitHubIcon } from '../res/github.svg'
