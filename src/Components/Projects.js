@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/container'
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/row'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'

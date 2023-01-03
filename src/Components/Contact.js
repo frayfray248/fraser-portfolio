@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/container'
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/row'
 import Col from 'react-bootstrap/col'
 import styled from 'styled-components'
