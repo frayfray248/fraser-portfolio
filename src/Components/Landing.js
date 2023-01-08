@@ -42,7 +42,9 @@ const Landing = ({ img }) => {
                     <Col align="center">
                         <StyledH1 >FRASER MACALLUM</StyledH1>
                         <StyledP>
-                            I'm an aspiring web developer seeking the title of Full Stack Developer. I have an ICS diploma from Camosun College and I completed my Capstone project for Victoria based company Three Trees Technical.
+                            I'm a technologies lab assistant and my goal is to become a Full Stack Developer. 
+                            I have an Information and Computer Systems diploma from Camosun College and I completed 
+                            my Capstone project for Victoria-based company Three Trees Technical.
                         </StyledP>
                         <ProfilePicture img={img} />
                     </Col>
