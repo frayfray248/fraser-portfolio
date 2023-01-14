@@ -8,7 +8,7 @@ import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 import SectionHeading from '../Components/SectionHeading'
 
 const StyledRow = styled(Row)`
-    height: 100vh;
+    min-height: 100vh;
 `
 
 const StyledFade = styled(Fade)`

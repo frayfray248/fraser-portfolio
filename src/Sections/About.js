@@ -7,7 +7,7 @@ import SectionHeading from '../Components/SectionHeading'
 
 
 const StyledRow = styled(Row)`
-    height: 100vh;
+    min-height: 100vh;
 `
 
 const StyledP = styled.p`

@@ -7,7 +7,7 @@ import ExperienceItem from '../Components/ExperienceItem'
 import SectionHeading from '../Components/SectionHeading'
 
 const StyledRow = styled(Row)`
-    height: 100vh;
+    min-height: 100vh;
 `
 const StyledFade = styled(Fade)`
     transition: opacity 2s linear
@@ -54,7 +54,6 @@ const Skills = () => {
                                 "Created a fast and asynchronous Node JS Express REST API using ES6 and Sequelize JS ORM",
                                 "Wrote detailed technical documentation, including a project charter, team bios, user manual, and final report",
                                 "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
-                                "Project URL: http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
                             ]}
                         />
                     </Col>
