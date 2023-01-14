@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'
-import PortfolioLink from './PortfolioLink'
+import PortfolioLink from '../Components/PortfolioLink'
 
 const StyledContainer = styled(Container)`
     height: 100vh;

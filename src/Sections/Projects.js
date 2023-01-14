@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'
-import Project from './Project'
+import Project from '../Components/Project'
 import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 
