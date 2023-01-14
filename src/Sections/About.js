@@ -6,20 +6,12 @@ import Fade from 'react-bootstrap/Fade'
 import SectionHeading from '../Components/SectionHeading'
 
 
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
-
 const StyledRow = styled(Row)`
     height: 100vh;
 `
 
 const StyledP = styled.p`
     max-width: 50vh;
-`
-
-const StyledImage = styled.img`
-    width: 200px;
 `
 
 const StyledFade = styled(Fade)`

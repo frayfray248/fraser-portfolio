@@ -6,23 +6,9 @@ import Fade from 'react-bootstrap/Fade';
 import ExperienceItem from '../Components/ExperienceItem'
 import SectionHeading from '../Components/SectionHeading'
 
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
-
 const StyledRow = styled(Row)`
     height: 100vh;
 `
-
-const StyledH1 = styled.h1`
-    font-size: 5rem;
-`
-
-const StyledUl = styled.ul`
-    max-width : 28rem;
-    font-size: x-large;
-`
-
 const StyledFade = styled(Fade)`
     transition: opacity 2s linear
 `

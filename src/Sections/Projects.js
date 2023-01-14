@@ -7,22 +7,8 @@ import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 import SectionHeading from '../Components/SectionHeading'
 
-
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
-
 const StyledRow = styled(Row)`
     height: 100vh;
-`
-
-const StyledH1 = styled.h1`
-    font-size: 5rem;
-`
-
-const StyledP = styled.p`
-    width : 28rem;
-    font-size: x-large;
 `
 
 const StyledFade = styled(Fade)`

@@ -1,4 +1,4 @@
-export default {
+const GreenContrast =  {
     headerColor: '#ffffff',
     color1 : '#61892F',
     color2 : '#86C232',
@@ -6,3 +6,5 @@ export default {
     color4 : '#474B4F',
     color5 : '#6B6E70'
 }
+
+export default GreenContrast

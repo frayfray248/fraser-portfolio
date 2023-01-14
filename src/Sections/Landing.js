@@ -6,10 +6,6 @@ import Fade from 'react-bootstrap/Fade';
 import ProfilePicture from '../Components/ProfilePicture'
 import SectionHeading from '../Components/SectionHeading'
 
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
-
 const StyledRow = styled(Row)`
     height: 100vh;
 `
@@ -20,12 +16,6 @@ const StyledP = styled.p`
 
 const StyledFade = styled(Fade)`
     transition: opacity 2s linear
-`
-
-const StyledPolygon = styled.polygon`
-
-    stroke:${props => props.theme.color2};
-    stroke-width:3;
 `
 
 const Landing = ({ img }) => {
