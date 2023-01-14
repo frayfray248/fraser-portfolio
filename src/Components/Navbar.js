@@ -3,8 +3,6 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import styled from 'styled-components'
 import Brand from './Brand'
-import { useEffect } from 'react'
-
 
 const StyledNavbar = styled(Navbar)`
     background-color: ${props => props.theme.color3};

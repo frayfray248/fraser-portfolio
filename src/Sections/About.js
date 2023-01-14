@@ -3,27 +3,15 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'
+import SectionHeading from '../Components/SectionHeading'
 
-
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
 
 const StyledRow = styled(Row)`
-    height: 100vh;
-`
-
-const StyledH1 = styled.h1`
-    font-size: 5rem;
+    min-height: 100vh;
 `
 
 const StyledP = styled.p`
-    width : 28rem;
-    font-size: large;
-`
-
-const StyledImage = styled.img`
-    width: 200px;
+    max-width: 50vh;
 `
 
 const StyledFade = styled(Fade)`
@@ -35,10 +23,10 @@ const About = ({img}) => {
 
     return (
         <StyledFade in appear timeout={3000}>
-            <StyledContainer id="about" fluid="md" className="justify-content-center">
+            <Container id="about">
                 <StyledRow className="text-center align-items-center ">
                     <Col align="center">
-                        <StyledH1>About Me</StyledH1>
+                        <SectionHeading>About Me</SectionHeading>
                         
                         <StyledP>
                         Hello! My name is Fraser, and I have a passion for programming with JavaScript. 
@@ -53,7 +41,7 @@ const About = ({img}) => {
                         </StyledP>
                     </Col>
                 </StyledRow >
-            </StyledContainer>
+            </Container>
         </StyledFade>
     )
 }
