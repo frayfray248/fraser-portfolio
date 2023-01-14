@@ -3,25 +3,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade';
-import ExperienceItem from './ExperienceItem'
-
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
+import ExperienceItem from '../Components/ExperienceItem'
+import SectionHeading from '../Components/SectionHeading'
 
 const StyledRow = styled(Row)`
-    height: 100vh;
+    min-height: 100vh;
 `
-
-const StyledH1 = styled.h1`
-    font-size: 5rem;
-`
-
-const StyledUl = styled.ul`
-    width : 28rem;
-    font-size: x-large;
-`
-
 const StyledFade = styled(Fade)`
     transition: opacity 2s linear
 `
@@ -31,10 +18,10 @@ const Skills = () => {
 
     return (
         <StyledFade in appear timeout={3000}>
-            <StyledContainer id="skills" fluid="md" className="justify-content-center">
+            <Container id="skills">
                 <StyledRow className="text-center align-items-center ">
                     <Col align="center">
-                        <StyledH1>Experience</StyledH1>
+                        <SectionHeading>Experience</SectionHeading>
                         <ExperienceItem 
                             position={"Lab Assistant, Technologies"}
                             employer={"Camosun College"}
@@ -67,12 +54,11 @@ const Skills = () => {
                                 "Created a fast and asynchronous Node JS Express REST API using ES6 and Sequelize JS ORM",
                                 "Wrote detailed technical documentation, including a project charter, team bios, user manual, and final report",
                                 "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
-                                "Project URL: http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
                             ]}
                         />
                     </Col>
                 </StyledRow >
-            </StyledContainer>
+            </Container>
         </StyledFade>
     )
 }

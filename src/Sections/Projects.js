@@ -2,26 +2,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade'
-import Project from './Project'
+import Project from '../Components/Project'
 import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
-
-
-const StyledContainer = styled(Container)`
-    height: 100vh;
-`
+import SectionHeading from '../Components/SectionHeading'
 
 const StyledRow = styled(Row)`
-    height: 100vh;
-`
-
-const StyledH1 = styled.h1`
-    font-size: 5rem;
-`
-
-const StyledP = styled.p`
-    width : 28rem;
-    font-size: x-large;
+    min-height: 100vh;
 `
 
 const StyledFade = styled(Fade)`
@@ -33,9 +20,9 @@ const Projects = () => {
 
     return (
         <StyledFade in appear timeout={3000}>
-            <StyledContainer id="projects" fluid="md" className="justify-content-center">
+            <Container id="projects">
                 <StyledRow className="text-center align-items-center justify-content-center">
-                    <StyledH1>Projects</StyledH1>
+                    <SectionHeading>Projects</SectionHeading>
                     <Project
                         title='Three Trees Calendar'
                         img={threeTreesPic}
@@ -49,7 +36,7 @@ const Projects = () => {
                         repoUrl={"https://github.com/frayfray248/evolution-sim"}
                         />
                 </StyledRow >
-            </StyledContainer>
+            </Container>
         </StyledFade>
     )
 }
