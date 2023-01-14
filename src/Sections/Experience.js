@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 import Fade from 'react-bootstrap/Fade';
 import ExperienceItem from '../Components/ExperienceItem'
+import SectionHeading from '../Components/SectionHeading'
 
 const StyledContainer = styled(Container)`
     height: 100vh;
@@ -18,7 +19,7 @@ const StyledH1 = styled.h1`
 `
 
 const StyledUl = styled.ul`
-    width : 28rem;
+    max-width : 28rem;
     font-size: x-large;
 `
 
@@ -31,10 +32,10 @@ const Skills = () => {
 
     return (
         <StyledFade in appear timeout={3000}>
-            <StyledContainer id="skills" fluid="md" className="justify-content-center">
+            <Container id="skills">
                 <StyledRow className="text-center align-items-center ">
                     <Col align="center">
-                        <StyledH1>Experience</StyledH1>
+                        <SectionHeading>Experience</SectionHeading>
                         <ExperienceItem 
                             position={"Lab Assistant, Technologies"}
                             employer={"Camosun College"}
@@ -72,7 +73,7 @@ const Skills = () => {
                         />
                     </Col>
                 </StyledRow >
-            </StyledContainer>
+            </Container>
         </StyledFade>
     )
 }
