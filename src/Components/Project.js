@@ -4,7 +4,9 @@ import { ReactComponent as LinkIcon } from '../res/link-45deg.svg'
 import { ReactComponent as GitHubIcon } from '../res/github.svg'
 
 const StyledImage = styled.img`
-    width: 100%;
+
+    width: 285px;
+    height: 285px;
     border-radius: 10px;
 `
 
@@ -48,8 +50,8 @@ const Project = ({ title, description, img, projectUrl, repoUrl }) => (
         <h2>{title}</h2>
         <p>{description}</p>
         <footer>
-            {projectUrl ? <a href={projectUrl}><StyledLinkIcon /></a> : ""}
-            {repoUrl ? <a href={repoUrl}><StyledGitHubIcon /></a> : ""}
+            {projectUrl ? <a href={projectUrl} target="_blank"><StyledLinkIcon /></a> : ""}
+            {repoUrl ? <a href={repoUrl} target="_blank"><StyledGitHubIcon /></a> : ""}
         </footer>
 
     </StyledCol>
