@@ -18,7 +18,7 @@ const Skills = () => {
 
     return (
         <StyledFade in appear timeout={3000}>
-            <Container id="skills">
+            <Container id="experience">
                 <StyledRow className="text-center align-items-center ">
                     <Col align="center">
                         <SectionHeading>Experience</SectionHeading>
