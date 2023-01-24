@@ -1,27 +1,14 @@
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import styled from 'styled-components'
-import Fade from 'react-bootstrap/Fade';
 import ExperienceItem from '../Components/ExperienceItem'
-import SectionHeading from '../Components/SectionHeading'
+import PortfolioContainer from '../Components/PortfolioContainer'
 
-const StyledRow = styled(Row)`
-    min-height: 100vh;
-`
-const StyledFade = styled(Fade)`
-    transition: opacity 2s linear
-`
 
-const Skills = () => {
+
+const Experience = () => {
 
 
     return (
-        <StyledFade in appear timeout={3000}>
-            <Container id="skills">
-                <StyledRow className="text-center align-items-center ">
-                    <Col align="center">
-                        <SectionHeading>Experience</SectionHeading>
+
+        <PortfolioContainer sectionId="experience" sectionName="Experience">
                         <ExperienceItem 
                             position={"Lab Assistant, Technologies"}
                             employer={"Camosun College"}
@@ -56,12 +43,9 @@ const Skills = () => {
                                 "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
                             ]}
                         />
-                    </Col>
-                </StyledRow >
-            </Container>
-        </StyledFade>
+</PortfolioContainer>
     )
 }
 
 
-export default Skills
+export default Experience
