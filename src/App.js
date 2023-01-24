@@ -8,6 +8,7 @@ import About from './Sections/About'
 import Projects from './Sections/Projects'
 import Experience from './Sections/Experience'
 import Contact from './Sections/Contact'
+import Skills from './Sections/Skills'
 
 import face from './res/labroom.png'
 
@@ -34,6 +35,7 @@ const App = () => (
         <Landing img={face}/>
         <About />
         <Projects />
+        <Skills />
         <Experience />
         <Contact />
     </ThemeProvider>

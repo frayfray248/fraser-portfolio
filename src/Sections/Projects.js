@@ -2,6 +2,7 @@ import Row from 'react-bootstrap/Row'
 import Project from '../Components/Project'
 import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
+import fraserPortfolioProjectPic from '../res/FraserPortfolioProjectPic.png'
 import PortfolioContainer from '../Components/PortfolioContainer'
 
 
@@ -21,6 +22,12 @@ const Projects = () => {
                     img={evolutionSimPic}
                     description='A web app that simulates the natural selection of 2D lifeforms'
                     repoUrl={"https://github.com/frayfray248/evolution-sim"}
+                />
+                <Project
+                    title='This Portfolio'
+                    img={fraserPortfolioProjectPic}
+                    description='A React app that show cases my projects, skills, and experience. Hosted on AWS.'
+                    repoUrl={"https://github.com/frayfray248/fraser-portfolio"}
                 />
             </Row>
         </PortfolioContainer>
