@@ -14,7 +14,7 @@ const Contact = () => {
     return (
         <PortfolioContainer sectionId="contact" sectionName="Contact">
             <StyledP>Thanks for reading my portfolio. Feel free to reach out to me if you have any questions.</StyledP>
-            <PortfolioLink href="/" text="Reach Out"></PortfolioLink>
+            <PortfolioLink href="mailto:fmacallum@shaw.ca" text="Reach Out"></PortfolioLink>
         </PortfolioContainer>
 
     )
