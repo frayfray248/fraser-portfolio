@@ -67,6 +67,7 @@ const PortfolioNavBar = () => {
                     <StyledNav className="justify-content-center">
                         <StyledLink href="#about">&lt;About /&gt;</StyledLink>
                         <StyledLink href="#projects">&lt;Projects /&gt;</StyledLink>
+                        <StyledLink href="#skills">&lt;Skills /&gt;</StyledLink>
                         <StyledLink href="#experience">&lt;Experience /&gt;</StyledLink>
                         <StyledLink href="#contact">&lt;Contact /&gt;</StyledLink>
                     </StyledNav>
