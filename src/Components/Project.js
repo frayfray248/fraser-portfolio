@@ -44,16 +44,28 @@ transition: all 0.5s;
 }
 `
 
-const Project = ({ title, description, img, projectUrl, repoUrl }) => (
-    <StyledCol className="m-2 p-2">
-        <StyledImage className="mb-2" src={img}></StyledImage>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <footer>
-            {projectUrl ? <a href={projectUrl} target="_blank"><StyledLinkIcon /></a> : ""}
-            {repoUrl ? <a href={repoUrl} target="_blank"><StyledGitHubIcon /></a> : ""}
-        </footer>
+const StyledAnchor = styled.a`
+&:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+&:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+`
 
+const Project = ({ title, description, img, projectUrl, repoUrl, mainLink }) => (
+    <StyledCol className="m-2 p-2">
+        <StyledAnchor href={mainLink} target="_blank">
+            <StyledImage className="mb-2" src={img}></StyledImage>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <footer className="align-bottom">
+                {projectUrl ? <a href={projectUrl} target="_blank"><StyledLinkIcon /></a> : ""}
+                {repoUrl ? <a href={repoUrl} target="_blank"><StyledGitHubIcon /></a> : ""}
+            </footer>
+        </StyledAnchor>
     </StyledCol>
 )
 
