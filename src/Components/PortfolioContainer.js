@@ -13,9 +13,15 @@ const StyledRow = styled(Row)`
     min-height: 100vh;
 `
 
+const NavSpace = styled.div`
+    height: 80px;
+`
+
 const PortfolioContainer = ({ sectionId, sectionName, children }) => (
     <StyledFade in appear timeout={3000}>
+        
         <Container id={sectionId}>
+        <NavSpace />
             <StyledRow className="text-center align-items-center ">
                 <Col align="center">
                     <SectionHeading>{sectionName}</SectionHeading>
