@@ -2,22 +2,10 @@ import PortfolioContainer from "../Components/PortfolioContainer"
 import Row from 'react-bootstrap/Row'
 import Skill from '../Components/Skill'
 import Col from 'react-bootstrap/Col'
-import { ReactComponent as terminalSVG } from '../res/terminal.svg'
-import styled from 'styled-components'
-
-const StyledLinkIcon = styled(terminalSVG)`
-width : 2rem;
-height : 2rem;
-color : ${props => props.theme.headerColor};
-margin : 4px;
-transition: all 0.5s;
-&:hover {
-    color: ${props => props.theme.color2};
-}
-`
 
 const skillsData = [
     {
+        iconId: 0,
         name: "Sys Admin",
         description: `Fraser has a solid background in Linux system administration and a variety of other technologies
          as a computer lab assistant in a post-secondary education environment. He has experience troubleshooting 
@@ -25,9 +13,9 @@ const skillsData = [
         such as Maya Backburner, Docker Swarm, a custom-built Node JS video streamer, DHCP, SSL certificates, 
         Node JS LDAP, GitLab, and Traefik. He is also experienced in managing Linux servers and virtual machines 
         via Hyper-V, which is a valuable skill for managing and maintaining a high-functioning computer lab`,
-        icon: StyledLinkIcon
     },
     {
+        iconId : 1,
         name: "Node JS",
         description: `Fraser has an intermediate background in Node.js development. He has experience working with 
         popular Node.js frameworks such as Express and React. He has a solid understanding of Node.js libraries, 
@@ -35,6 +23,7 @@ const skillsData = [
         and asynchronous Node JS Express REST APIs using ES6. He is always eager to learn and use a new cool Node library.`
     },
     {
+        iconId : 2,
         name: "JS/HTML/CSS",
         description: `Fraser has a solid foundation in JavaScript, HTML, and CSS. He has experience in building 
         web applications and has a good understanding of the basics of front-end web development. He is eager to gain 
@@ -45,6 +34,7 @@ const skillsData = [
         to continue learning and growing as a developer in the field of web development.`
     },
     {
+        iconId : 3,
         name: "Technical Writing",
         description: `Fraser has a strong background in technical writing. He has experience with creating technical 
         documentation, including project charters, user manuals, final reports, computer lab software instructions. He also has experience with writing 
@@ -52,6 +42,7 @@ const skillsData = [
         He also has experience in Agile development, which further helped him to develop his technical writing skills.`
     },
     {
+        iconId : 4,
         name: "Technology Tutor",
         description: `Fraser has a strong background in tutoring and teaching computer science courses. He has direct 
         experience in tutoring students with lab and course work. He is able to effectively communicate technical 
@@ -69,7 +60,7 @@ const Skills = () => (
             {skillsData.map((skill, index) => 
                 <Col key={index} xs={12} md={6} className="d-block d-md-flex">
                     
-                    <Skill  name={skill.name} description={skill.description}/>
+                    <Skill  name={skill.name} description={skill.description} iconId={skill.iconId} />
                 </Col>
             )}
         </Row>
