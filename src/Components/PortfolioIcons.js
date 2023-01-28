@@ -7,6 +7,8 @@ import { ReactComponent as CodeSlashIcon } from '../res/code-slash.svg'
 import { ReactComponent as GearIcon } from '../res/gear.svg'
 import { ReactComponent as PenIcon } from '../res/pen.svg'
 import { ReactComponent as PeopleIcon } from '../res/people.svg'
+import { ReactComponent as LinkedinIcon } from '../res/linkedin.svg'
+import { ReactComponent as EmailIcon } from '../res/envelope-at.svg'
 
 const style = css`
 width : 2rem;
@@ -24,3 +26,5 @@ export const StyledGearIcon = styled(GearIcon)`${style}`
 export const StyledNodeIcon = styled(() => (<NodeIcon fill="white" width="32" height="32"/>))`${style}`
 export const StyledPenIcon = styled(PenIcon)`${style}`
 export const StyledPeopleIcon = styled(PeopleIcon)`${style}`
+export const StyledLinkedinIcon = styled(LinkedinIcon)`${style}`
+export const StyledEmailIcon = styled(EmailIcon)`${style}`
