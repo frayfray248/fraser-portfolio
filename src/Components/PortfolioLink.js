@@ -22,6 +22,6 @@ const StyledA = styled(Button)`
     }
 `
 
-const PortfolioLink = ({ text, href }) => <StyledA href={href}>{text}</StyledA>
+const PortfolioLink = ({ text, href }) => <StyledA href={href} target="_blank" rel="noreferrer">{text}</StyledA>
 
 export default PortfolioLink

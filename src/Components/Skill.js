@@ -1,5 +1,6 @@
 import Col from "react-bootstrap/Col"
 import styled from "styled-components"
+import PortfolioLink from "./PortfolioLink"
 import { StyledGearIcon, StyledTerminalIcon, StyledCodeSlashIcon, StyledPenIcon, StyledPeopleIcon } from './PortfolioIcons'
 
 const icons = [
@@ -16,7 +17,7 @@ const StyledSpan = styled.span`
 
 
 
-const Skills = ({ name, description, iconId }) => {
+const Skills = ({ name, description, iconId, links }) => {
 
     // vertical align the icons so they don't appear below the header text
     const StyledIcon = styled(() => icons[iconId])`
@@ -27,6 +28,7 @@ const Skills = ({ name, description, iconId }) => {
         <Col className="flex-wrap-md-down">
             <h2><StyledIcon /><StyledSpan>{name}</StyledSpan></h2>
             <p>{description}</p>
+            {links ? links.map((link, index) => <PortfolioLink index={index} text={link.text} href={link.URL}/>) : ""}
         </Col>
     )
 }
