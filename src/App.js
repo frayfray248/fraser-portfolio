@@ -3,12 +3,15 @@ import StyledNavbar from './Components/Navbar'
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from 'styled-components'
 import theme from './Themes/GreenContrast'
+
+// sections
 import Landing from './Sections/Landing'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
-import Experience from './Sections/Experience'
-import Contact from './Sections/Contact'
 import Skills from './Sections/Skills'
+import Experience from './Sections/Experience'
+import Interests from './Sections/Interests'
+import Contact from './Sections/Contact'
 
 import face from './res/labroom.png'
 
@@ -37,6 +40,7 @@ const App = () => (
         <Projects />
         <Skills />
         <Experience />
+        <Interests />
         <Contact />
     </ThemeProvider>
 )

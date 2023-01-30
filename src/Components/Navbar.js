@@ -69,6 +69,7 @@ const PortfolioNavBar = () => {
                         <StyledLink href="#projects">&lt;Projects /&gt;</StyledLink>
                         <StyledLink href="#skills">&lt;Skills /&gt;</StyledLink>
                         <StyledLink href="#experience">&lt;Experience /&gt;</StyledLink>
+                        <StyledLink href="#interests">&lt;Interests /&gt;</StyledLink>
                         <StyledLink href="#contact">&lt;Contact /&gt;</StyledLink>
                     </StyledNav>
                 </Navbar.Collapse>
