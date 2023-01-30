@@ -16,18 +16,21 @@ const Projects = () => {
                     img={threeTreesPic}
                     description='A class/workshop manager WordPress plugin'
                     projectUrl="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
+                    mainLink="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
                 />
                 <Project
                     title='Evolution Sim'
                     img={evolutionSimPic}
                     description='A web app that simulates the natural selection of 2D lifeforms'
                     repoUrl={"https://github.com/frayfray248/evolution-sim"}
+                    mainLink="https://github.com/frayfray248/evolution-sim"
                 />
                 <Project
                     title='This Portfolio'
                     img={fraserPortfolioProjectPic}
                     description='A React app that show cases my projects, skills, and experience. Hosted on AWS.'
                     repoUrl={"https://github.com/frayfray248/fraser-portfolio"}
+                    mainLink="https://github.com/frayfray248/fraser-portfolio"
                 />
             </Row>
         </PortfolioContainer>

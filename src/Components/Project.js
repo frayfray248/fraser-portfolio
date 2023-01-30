@@ -1,7 +1,6 @@
 import Col from "react-bootstrap/Col"
 import styled from 'styled-components'
-import { ReactComponent as LinkIcon } from '../res/link-45deg.svg'
-import { ReactComponent as GitHubIcon } from '../res/github.svg'
+import { StyledGitHubIcon, StyledLinkIcon } from './PortfolioIcons'
 
 const StyledImage = styled.img`
 
@@ -22,36 +21,34 @@ const StyledCol = styled(Col)`
     }
 `
 
-const StyledLinkIcon = styled(LinkIcon)`
-width : 2rem;
-height : 2rem;
-color : ${props => props.theme.headerColor};
-margin : 4px;
-transition: all 0.5s;
-&:hover {
-    color: ${props => props.theme.color2};
+const StyledImageAnchor = styled.a`
+&:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+&:visited {
+    text-decoration: inherit;
+    color: inherit;
 }
 `
 
-const StyledGitHubIcon = styled(GitHubIcon)`
-width : 2rem;
-height : 2rem;
-color : ${props => props.theme.headerColor};
-margin : 4px;
-transition: all 0.5s;
-&:hover {
+const IconAnchor = styled.a`
+
+>:hover {
     color: ${props => props.theme.color2};
-}
+  }
 `
 
-const Project = ({ title, description, img, projectUrl, repoUrl }) => (
+const Project = ({ title, description, img, projectUrl, repoUrl, mainLink }) => (
     <StyledCol className="m-2 p-2">
-        <StyledImage className="mb-2" src={img}></StyledImage>
+        <StyledImageAnchor href={mainLink} target="_blank">
+            <StyledImage className="mb-2" src={img}></StyledImage>
+        </StyledImageAnchor>
         <h2>{title}</h2>
         <p>{description}</p>
-        <footer>
-            {projectUrl ? <a href={projectUrl} target="_blank"><StyledLinkIcon /></a> : ""}
-            {repoUrl ? <a href={repoUrl} target="_blank"><StyledGitHubIcon /></a> : ""}
+        <footer className="align-bottom">
+            {projectUrl ? <IconAnchor href={projectUrl} target="_blank" rel="noreferrer"><StyledLinkIcon hover="true" /></IconAnchor> : ""}
+            {repoUrl ? <IconAnchor href={repoUrl} target="_blank" rel="noreferrer"><StyledGitHubIcon hover="true" /></IconAnchor> : ""}
         </footer>
 
     </StyledCol>

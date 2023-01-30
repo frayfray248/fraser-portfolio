@@ -1,13 +1,13 @@
 import styled from 'styled-components'
+import Button from 'react-bootstrap/Button';
 
-const StyledA = styled.a`
+const StyledA = styled(Button)`
     background : none;
     border: 2px solid ${props => props.theme.color2};
     border-radius: 5px;
     color: ${props => props.theme.color2};
     padding: 20px;
     text-decoration: none;
-    margin-top: 10px;
 
     &:hover {
         background-color: ${props => props.theme.color2};
@@ -22,6 +22,6 @@ const StyledA = styled.a`
     }
 `
 
-const PortfolioLink = ({ text, href }) => <StyledA href={href}>{text}</StyledA>
+const PortfolioLink = ({ text, href }) => <StyledA href={href} target="_blank" rel="noreferrer">{text}</StyledA>
 
 export default PortfolioLink
