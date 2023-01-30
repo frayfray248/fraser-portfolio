@@ -1,7 +1,7 @@
 import PortfolioContainer from '../Components/PortfolioContainer'
 import Interest from '../Components/Interest'
 import golfPic from '../res/golfPic.jpg'
-import piePic from '../res/pie.JPG'
+import piePic from '../res/piePic.jpg'
 import DnDPic from '../res/DnDPic.jpg'
 import pcPosePic from '../res/pcPosePic.jpg'
 import { Row } from 'react-bootstrap'
