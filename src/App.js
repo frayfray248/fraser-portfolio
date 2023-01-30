@@ -10,8 +10,8 @@ import About from './Sections/About'
 import Projects from './Sections/Projects'
 import Skills from './Sections/Skills'
 import Experience from './Sections/Experience'
+import Interests from './Sections/Interests'
 import Contact from './Sections/Contact'
-import Skills from './Sections/Skills'
 
 import face from './res/labroom.png'
 
@@ -40,6 +40,7 @@ const App = () => (
         <Projects />
         <Skills />
         <Experience />
+        <Interests />
         <Contact />
     </ThemeProvider>
 )
