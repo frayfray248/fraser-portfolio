@@ -28,7 +28,7 @@ const Skills = ({ name, description, iconId, links }) => {
         <Col className="flex-wrap-md-down">
             <h2><StyledIcon /><StyledSpan>{name}</StyledSpan></h2>
             <p>{description}</p>
-            {links ? links.map((link, index) => <PortfolioLink index={index} text={link.text} href={link.URL}/>) : ""}
+            {links ? links.map((link, index) => <PortfolioLink key={index} text={link.text} href={link.URL}/>) : ""}
         </Col>
     )
 }
