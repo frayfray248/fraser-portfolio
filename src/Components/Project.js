@@ -1,6 +1,12 @@
 import Col from "react-bootstrap/Col"
 import styled from 'styled-components'
 import { StyledGitHubIcon, StyledLinkIcon } from './PortfolioIcons'
+import React from "react"
+
+const icons = [
+    <StyledLinkIcon hover="true" />,
+    <StyledGitHubIcon hover="true" />
+]
 
 const StyledImage = styled.img`
 
@@ -39,7 +45,7 @@ const IconAnchor = styled.a`
   }
 `
 
-const Project = ({ title, description, img, projectUrl, repoUrl, mainLink }) => (
+const Project = ({ title, description, img, projectUrl, repoUrl, mainLink, links }) => (
     <StyledCol className="m-2 p-2">
         <StyledImageAnchor href={mainLink} target="_blank">
             <StyledImage className="mb-2" src={img}></StyledImage>
@@ -47,6 +53,12 @@ const Project = ({ title, description, img, projectUrl, repoUrl, mainLink }) => 
         <h2>{title}</h2>
         <p>{description}</p>
         <footer className="align-bottom">
+            {
+                links ?
+                    links.map((link, index) => <React.Fragment key={index} >&nbsp;{link.text}&nbsp;<IconAnchor  href={link.url} target="_blank" rel="noreferrer">{icons[link.iconIndex]}</IconAnchor></React.Fragment>)
+                    :
+                    ""
+            }
             {projectUrl ? <IconAnchor href={projectUrl} target="_blank" rel="noreferrer"><StyledLinkIcon hover="true" /></IconAnchor> : ""}
             {repoUrl ? <IconAnchor href={repoUrl} target="_blank" rel="noreferrer"><StyledGitHubIcon hover="true" /></IconAnchor> : ""}
         </footer>

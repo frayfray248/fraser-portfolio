@@ -4,6 +4,8 @@ import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 import fraserPortfolioProjectPic from '../res/FraserPortfolioProjectPic.png'
 import PortfolioContainer from '../Components/PortfolioContainer'
+import RealmCraftPortfolioPic from '../res/RealmCraftPortfolioPic.png'
+import NeoMerchantPortfolioPic from '../res/NeoMerchantPortfolioPic.png'
 
 
 const Projects = () => {
@@ -19,6 +21,25 @@ const Projects = () => {
                     mainLink="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
                 />
                 <Project
+                    title='NeoMerchant'
+                    img={NeoMerchantPortfolioPic}
+                    description='An Ecommerce React web app and Node Express REST API.'
+                    mainLink={"https://github.com/frayfray248/neomerchant-app"}
+                    links={[
+                        {
+                            url: "https://github.com/frayfray248/neomerchant-app",
+                            iconIndex: 1,
+                            text: "APP:"
+                        },
+                        {
+                            url: "https://github.com/frayfray248/neomerchant-api",
+                            iconIndex: 1,
+                            text: "API:"
+                        }
+                        
+                    ]}
+                />
+                <Project
                     title='Evolution Sim'
                     img={evolutionSimPic}
                     description='A web app that simulates the natural selection of 2D lifeforms'
@@ -31,6 +52,13 @@ const Projects = () => {
                     description='A React app that show cases my projects, skills, and experience. Hosted on AWS.'
                     repoUrl={"https://github.com/frayfray248/fraser-portfolio"}
                     mainLink="https://github.com/frayfray248/fraser-portfolio"
+                />
+                <Project
+                    title='RealmCraft RPG'
+                    img={RealmCraftPortfolioPic}
+                    description='A tile-based fantasy RPG made using Java Swing. This was my first personal project.'
+                    repoUrl={"https://github.com/frayfray248/Fantasy-RPG-RealmCraft-Java"}
+                    mainLink="https://github.com/frayfray248/Fantasy-RPG-RealmCraft-Java"
                 />
             </Row>
         </PortfolioContainer>
