@@ -16,7 +16,7 @@ const StyledImage = styled.img`
 `
 
 const StyledCol = styled(Col)`
-    background: ${props => props.theme.color3};
+    background: none;
     border: none;
     border-radius: 10px;
     max-width: 300px;

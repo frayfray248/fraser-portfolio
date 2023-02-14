@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Brand from './Brand'
 
 const StyledNavbar = styled(Navbar)`
-    background-color: ${props => props.theme.color3};
+    background-image: linear-gradient(${props => props.theme.color3}, ${props => props.theme.color6});
     box-shadow: 10px 0px 10px black;
 `
 
