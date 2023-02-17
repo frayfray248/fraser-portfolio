@@ -1,11 +1,12 @@
 import Col from "react-bootstrap/Col"
 import styled from 'styled-components'
-import { StyledGitHubIcon, StyledLinkIcon } from './PortfolioIcons'
+import { StyledGitHubIcon, StyledLinkIcon, StyledPlayBtnIcon } from './PortfolioIcons'
 import React from "react"
 
 const icons = [
     <StyledLinkIcon hover="true" />,
-    <StyledGitHubIcon hover="true" />
+    <StyledGitHubIcon hover="true" />,
+    <StyledPlayBtnIcon hover="true" />
 ]
 
 const StyledImage = styled.img`

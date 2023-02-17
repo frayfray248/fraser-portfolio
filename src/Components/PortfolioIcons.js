@@ -9,6 +9,7 @@ import { ReactComponent as PenIcon } from '../res/pen.svg'
 import { ReactComponent as PeopleIcon } from '../res/people.svg'
 import { ReactComponent as LinkedinIcon } from '../res/linkedin.svg'
 import { ReactComponent as EmailIcon } from '../res/envelope-at.svg'
+import { ReactComponent as PlayBtnIcon} from '../res/playbtn.svg'
 
 const style = css`
 width : 2rem;
@@ -28,3 +29,4 @@ export const StyledPenIcon = styled(PenIcon)`${style}`
 export const StyledPeopleIcon = styled(PeopleIcon)`${style}`
 export const StyledLinkedinIcon = styled(LinkedinIcon)`${style}`
 export const StyledEmailIcon = styled(EmailIcon)`${style}`
+export const StyledPlayBtnIcon = styled(PlayBtnIcon)`${style}`
