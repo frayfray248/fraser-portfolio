@@ -14,6 +14,7 @@ const StyledInlineFlexContainer = styled.div`
     padding : 10px;
     margin-top : 10px;
     border-radius : 15px;
+    box-shadow: 0px 0px 5px 5px ${props => props.theme.color6};
 `
 
 const IconSlot = styled.div`

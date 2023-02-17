@@ -45,6 +45,11 @@ const Projects = () => {
                     description='A web app that simulates the natural selection of 2D lifeforms'
                     repoUrl={"https://github.com/frayfray248/evolution-sim"}
                     mainLink="https://github.com/frayfray248/evolution-sim"
+                    links={[
+                        {
+                            url: "https://evolution-sim.fly.dev/",
+                            iconIndex: 2,
+                        }]}
                 />
                 <Project
                     title='This Portfolio'

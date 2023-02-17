@@ -25,7 +25,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${props => props.theme.color3};
+        background-image: radial-gradient(${props => props.theme.color4}, ${props => props.theme.color6});
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         color: ${props => props.theme.color2};
         font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     }
