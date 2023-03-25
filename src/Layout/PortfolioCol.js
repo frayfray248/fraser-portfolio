@@ -9,6 +9,7 @@ const PortfolioCol = styled.div`
     display: flex;
     flex-direction: column;
     max-width: ${props => props.mWidth? `${props.mWidth}px` : "fit-content"};
+    justify-content: ${props => props.justifyContent};
 `
 
 export default PortfolioCol

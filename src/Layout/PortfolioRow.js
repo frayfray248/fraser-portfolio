@@ -4,7 +4,8 @@ const PortfolioRow = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    justify-content: ${props => props.justifyContent};
 `
 
 export default PortfolioRow
