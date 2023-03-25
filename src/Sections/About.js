@@ -6,9 +6,29 @@ import PortfolioCol from '../Layout/PortfolioCol'
 // components
 import PortfolioText from '../Components/PortfolioText'
 import SectionHeading from '../Components/SectionHeading'
+import GridList from '../Components/GridList'
 
 // Description:
 // A brief description about me
+
+const technologies = [
+    "ES6 JavaScript",
+    "Node JS",
+    "Express JS",
+    "React",
+    "jQuery",
+    "HTML",
+    "CSS",
+    "Git",
+    "Axios",
+    "Mongoose",
+    "MongoDB",
+    "Docker CE",
+    "Portainer",
+    "Traefik",
+    "Bootstrap",
+    "Socket IO",
+]
 
 const About = () => {
     return (
@@ -23,9 +43,21 @@ const About = () => {
                         love for codding when I took my first algorithms course. My passion for web development was fully formed
                         when I created a REST Node JS Express API for my WordPress Capstone project. My mission to become a full stack developer began.
                     </PortfolioText>
-                    <PortfolioText type="normal">
-                        I'm also a tutor, a dungeon master, and a golfer.
+                    <PortfolioText type="highlight">
+                        I'm ready for a challenge. Let's make something awesome.
                     </PortfolioText>
+                </PortfolioCol>
+                <PortfolioCol >
+                    <PortfolioRow>
+                        <PortfolioText type="normal">
+                            Here are some technologies I've used:
+                        </PortfolioText>
+                    </PortfolioRow>
+                    <PortfolioRow>
+                        <PortfolioCol>
+                            <GridList items={technologies}/>
+                        </PortfolioCol>
+                    </PortfolioRow>
                 </PortfolioCol>
             </PortfolioRow>
         </PortfolioSection>
