@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledImage = styled.img`
-    max-width: 300px;
+    width: -webkit-fill-available;
     border-radius : ${props => props.radius}%;
     filter: grayscale(75%);
     box-shadow: 10px 10px 10px black;
