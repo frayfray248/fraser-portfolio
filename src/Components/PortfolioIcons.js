@@ -14,7 +14,7 @@ import { ReactComponent as PlayBtnIcon} from '../res/playbtn.svg'
 const style = css`
 width : 2rem;
 height : 2rem;
-color : ${props => props.theme.headerColor};
+color : ${props => props.theme.header};
 margin : 4px;
 transition: all 0.5s;
 `

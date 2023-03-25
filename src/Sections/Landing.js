@@ -18,7 +18,7 @@ const Landing = ({ img }) => {
             <SectionHeading>FRASER MACALLUM</SectionHeading>
             <PortfolioRow>
                 <PortfolioCol>
-                    <PortfolioText type="highlight">
+                    <PortfolioText type="highlight" size="2">
                         Web development is my hobby, my joy, and my future.
                     </PortfolioText>
                     <PortfolioText type="normal">
@@ -30,7 +30,7 @@ const Landing = ({ img }) => {
                         personal projects.
                     </PortfolioText>
                 </PortfolioCol>
-                <PortfolioCol>
+                <PortfolioCol mWidth="250">
                     <ProfilePicture img={img} radius={25} />
                 </PortfolioCol>
             </PortfolioRow>

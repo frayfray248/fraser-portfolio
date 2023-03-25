@@ -24,7 +24,7 @@ const StyledCol = styled(Col)`
     transition: all 0.5s;
     height: 500px;
     &:hover {
-        background: ${props => props.theme.color4};
+        background: ${props => props.theme.projectHover};
     }
 `
 
@@ -42,7 +42,7 @@ const StyledImageAnchor = styled.a`
 const IconAnchor = styled.a`
 
 >:hover {
-    color: ${props => props.theme.color2};
+    color: ${props => props.theme.link};
   }
 `
 

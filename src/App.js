@@ -22,6 +22,7 @@ import Contact from './Sections/Contact'
 import StyledNavbar from './Components/Navbar'
 import SocialMediaSideBar from './Components/SocialMediaSideBar';
 import face from './res/labroom.png'
+import Arrow from './Components/Arrow';
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -29,14 +30,14 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2 {
-        color: ${props => props.theme.headerColor};
+        color: ${props => props.theme.header};
     }
 
     body {
-        background-image: radial-gradient(${props => props.theme.color4}, ${props => props.theme.color6});
+        background-image: radial-gradient(${props => props.theme.bgGradiant1}, ${props => props.theme.bgGradiant2});
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: ${props => props.theme.color2};
+        color: ${props => props.theme.normalText};
         font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     }
 `
@@ -46,6 +47,7 @@ const App = () => (
         <GlobalStyle />
         <StyledNavbar />
         <SocialMediaSideBar />
+        <Arrow />
 
         {/* main container */}
         <PortfolioMain>

@@ -22,7 +22,7 @@ const StyledSideBarContainer = styled.div`
 const IconAnchor = styled.a`
 
 >:hover {
-    color: ${props => props.theme.color2};
+    color: ${props => props.theme.link};
   }
 `
 

@@ -18,11 +18,11 @@ import { StyledLinkedinIcon, StyledGitHubIcon, StyledEmailIcon } from '../Compon
 
 
 const StyledFlexContainer = styled.div`
-    background-color: ${props => props.theme.color6};
+    background-color: ${props => props.theme.sidebar};
     padding : 10px;
     margin-top : 10px;
     border-radius : 15px;
-    box-shadow: 0px 0px 5px 5px ${props => props.theme.color6};
+    box-shadow: 0px 0px 5px 5px ${props => props.theme.sidebar};
     display: flex;
 
     @media (min-width: 1600px) {
@@ -37,7 +37,7 @@ const IconSlot = styled.div`
 const IconAnchor = styled.a`
 
 >:hover {
-    color: ${props => props.theme.color2};
+    color: ${props => props.theme.link};
   }
 `
 

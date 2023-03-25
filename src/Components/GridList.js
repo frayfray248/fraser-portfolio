@@ -10,11 +10,11 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
     font-size: 1.4rem;
-    color: ${props => props.theme.paragraph};
+    color: ${props => props.theme.normalText};
 
     &::before {
         content: "▹";
-        color: lime;
+        color: ${props => props.theme.highlight};
     }
 `
 

@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 const colors = {
-    "highlight" : "color2",
-    "normal"    : "paragraph"
+    "highlight" : "highlight",
+    "normal"    : "normalText"
 }
 
 const StyledText = styled.p`
