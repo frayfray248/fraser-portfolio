@@ -7,11 +7,11 @@ const StyledProfilePicture = styled(ProfilePicture)`
 `
 
 const Interest = ({ title, description, img }) => (
-    <Col>
+    <div>
         <StyledProfilePicture img={img} />
         <h2>{title}</h2>
         <p>{description}</p>
-    </Col>
+    </div>
 )
 
 export default Interest

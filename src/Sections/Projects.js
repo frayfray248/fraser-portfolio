@@ -1,18 +1,28 @@
-import Row from 'react-bootstrap/Row'
+// layout
+import PortfolioSection from '../Layout/PortfolioSection'
+import PortfolioRow from '../Layout/PortfolioRow'
+
+// components
+import SectionHeading from '../Components/SectionHeading'
 import Project from '../Components/Project'
+
+// images
 import threeTreesPic from '../res/ThreeTreesCalendarProfilePic.png'
 import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 import fraserPortfolioProjectPic from '../res/FraserPortfolioProjectPic.png'
-import PortfolioContainer from '../Components/PortfolioContainer'
 import RealmCraftPortfolioPic from '../res/RealmCraftPortfolioPic.png'
 import NeoMerchantPortfolioPic from '../res/NeoMerchantPortfolioPic.png'
 
 
+// Description:
+// A showcase of my projects, each with an image, title, description, and links
+
 const Projects = () => {
 
     return (
-        <PortfolioContainer sectionId="projects" sectionName="Projects">
-            <Row className="text-center align-items-center justify-content-center">
+        <PortfolioSection sectionId="projects">
+            <SectionHeading>Projects</SectionHeading>
+            <PortfolioRow>
                 <Project
                     title='Three Trees Calendar'
                     img={threeTreesPic}
@@ -36,7 +46,7 @@ const Projects = () => {
                             iconIndex: 1,
                             text: "API:"
                         }
-                        
+
                     ]}
                 />
                 <Project
@@ -65,8 +75,8 @@ const Projects = () => {
                     repoUrl={"https://github.com/frayfray248/Fantasy-RPG-RealmCraft-Java"}
                     mainLink="https://github.com/frayfray248/Fantasy-RPG-RealmCraft-Java"
                 />
-            </Row>
-        </PortfolioContainer>
+            </PortfolioRow>
+        </PortfolioSection>
     )
 }
 

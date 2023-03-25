@@ -17,16 +17,22 @@ const NavSpace = styled.div`
     height: 80px;
 `
 
+const StyledCol = styled(Col)`
+    border-left: 10px solid black;
+    border-top: 10px solid;
+`
+
 const PortfolioContainer = ({ sectionId, sectionName, children }) => (
     <StyledFade in appear timeout={3000}>
         
         <Container id={sectionId}>
         <NavSpace />
             <StyledRow className="text-center align-items-center ">
-                <Col align="center">
-                    <SectionHeading>{sectionName}</SectionHeading>
+            <SectionHeading className="align-self-bottom">{sectionName}</SectionHeading>
+                <StyledCol align="center">
+                    
                     { children }
-                </Col>
+                </StyledCol>
             </StyledRow >
         </Container>
     </StyledFade>

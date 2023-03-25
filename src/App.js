@@ -1,8 +1,13 @@
+// libraries
 import React from 'react';
-import StyledNavbar from './Components/Navbar'
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from 'styled-components'
+
+// theme
 import theme from './Themes/GreenContrast'
+
+// layout
+import PortfolioMain from './Layout/PortfolioMain'
 
 // sections
 import Landing from './Sections/Landing'
@@ -13,6 +18,8 @@ import Experience from './Sections/Experience'
 import Interests from './Sections/Interests'
 import Contact from './Sections/Contact'
 
+// components
+import StyledNavbar from './Components/Navbar'
 import face from './res/labroom.png'
 
 const GlobalStyle = createGlobalStyle`
@@ -37,13 +44,20 @@ const App = () => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledNavbar />
-        <Landing img={face}/>
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Interests />
-        <Contact />
+
+        {/* main container */}
+        <PortfolioMain>
+
+            {/* sections */}
+            <Landing img={face} />
+            <About />
+            <Projects />
+            <Skills />
+            <Experience />
+            <Interests />
+            <Contact />
+
+        </PortfolioMain>
     </ThemeProvider>
 )
 

@@ -1,13 +1,21 @@
+// libraries
 import styled from 'styled-components'
+
+// layout
+import PortfolioSection from '../Layout/PortfolioSection'
+
+// components
 import PortfolioLink from '../Components/PortfolioLink'
-import PortfolioContainer from '../Components/PortfolioContainer'
+import SectionHeading from '../Components/SectionHeading'
+import PortfolioText from '../Components/PortfolioText'
+
+// icons
 import { StyledLinkedinIcon, StyledGitHubIcon, StyledEmailIcon } from '../Components/PortfolioIcons'
 
 
-const StyledP = styled.p`
-    max-width: 50vh;
-    padding-bottom: 20px;
-`
+// Description
+// A thank you and email contact button
+
 
 const StyledInlineFlexContainer = styled.div`
     background-color: ${props => props.theme.color6};
@@ -32,24 +40,24 @@ const Contact = () => {
 
 
     return (
-        <PortfolioContainer sectionId="contact" sectionName="Contact">
-
-            <StyledP>Thanks for reading my portfolio. Feel free to reach out to me if you have any questions.</StyledP>
+        <PortfolioSection sectionId="contact">
+            <SectionHeading>Contact</SectionHeading>
+            <PortfolioText>Thanks for reading my portfolio. Feel free to reach out to me if you have any questions.</PortfolioText>
             <PortfolioLink href="mailto:fmacallum@shaw.ca" text="Reach Out" ></PortfolioLink>
             <br />
             <StyledInlineFlexContainer className='d-inline-flex m-4'>
                 <IconSlot>
-                    <IconAnchor  href="mailto:fmacallum@shaw.ca"><StyledEmailIcon /></IconAnchor>
+                    <IconAnchor href="mailto:fmacallum@shaw.ca"><StyledEmailIcon /></IconAnchor>
                 </IconSlot>
                 <IconSlot>
                     <IconAnchor href="https://github.com/frayfray248" target="_blank" rel="noreferrer"> <StyledGitHubIcon /></IconAnchor>
                 </IconSlot>
                 <IconSlot>
-                <IconAnchor href="https://www.linkedin.com/in/fraser-macallum-752b2716b" target="_blank" rel="noreferrer"> <StyledLinkedinIcon /></IconAnchor>
+                    <IconAnchor href="https://www.linkedin.com/in/fraser-macallum-752b2716b" target="_blank" rel="noreferrer"> <StyledLinkedinIcon /></IconAnchor>
                 </IconSlot>
             </StyledInlineFlexContainer>
 
-        </PortfolioContainer>
+        </PortfolioSection>
 
     )
 }

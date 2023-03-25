@@ -1,7 +1,14 @@
-import PortfolioContainer from "../Components/PortfolioContainer"
-import Row from 'react-bootstrap/Row'
+// layout
+import PortfolioSection from "../Layout/PortfolioSection"
+import PortfolioRow from "../Layout/PortfolioRow"
+import PortfolioCol from "../Layout/PortfolioCol"
+
+// components
+import SectionHeading from "../Components/SectionHeading"
 import Skill from '../Components/Skill'
-import Col from 'react-bootstrap/Col'
+
+// Description:
+// Descriptions of my skills
 
 const skillsData = [
     {
@@ -68,16 +75,16 @@ const skillsData = [
 
 
 const Skills = () => (
-    <PortfolioContainer sectionId="skills" sectionName="Skills" >
-        <Row className="text-center justify-content-center d-flex">
+    <PortfolioSection sectionId="skills">
+        <SectionHeading>Skills</SectionHeading>
+        <PortfolioRow>
             {skillsData.map((skill, index) =>
-                <Col key={index} xs={12} md={6} className="d-block d-md-flex">
-
+                <PortfolioCol key={index} mWidth="300">
                     <Skill name={skill.name} description={skill.description} iconId={skill.iconId} links={skill.links}/>
-                </Col>
+                </PortfolioCol>
             )}
-        </Row>
-    </PortfolioContainer>
+        </PortfolioRow>
+    </PortfolioSection>
 )
 
 export default Skills
