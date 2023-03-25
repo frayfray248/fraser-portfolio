@@ -17,12 +17,17 @@ import { StyledLinkedinIcon, StyledGitHubIcon, StyledEmailIcon } from '../Compon
 // A thank you and email contact button
 
 
-const StyledInlineFlexContainer = styled.div`
+const StyledFlexContainer = styled.div`
     background-color: ${props => props.theme.color6};
     padding : 10px;
     margin-top : 10px;
     border-radius : 15px;
     box-shadow: 0px 0px 5px 5px ${props => props.theme.color6};
+    display: flex;
+
+    @media (min-width: 1600px) {
+        display: none;
+    }
 `
 
 const IconSlot = styled.div`
@@ -45,7 +50,7 @@ const Contact = () => {
             <PortfolioText>Thanks for reading my portfolio. Feel free to reach out to me if you have any questions.</PortfolioText>
             <PortfolioLink href="mailto:fmacallum@shaw.ca" text="Reach Out" ></PortfolioLink>
             <br />
-            <StyledInlineFlexContainer className='d-inline-flex m-4'>
+            <StyledFlexContainer>
                 <IconSlot>
                     <IconAnchor href="mailto:fmacallum@shaw.ca"><StyledEmailIcon /></IconAnchor>
                 </IconSlot>
@@ -55,7 +60,7 @@ const Contact = () => {
                 <IconSlot>
                     <IconAnchor href="https://www.linkedin.com/in/fraser-macallum-752b2716b" target="_blank" rel="noreferrer"> <StyledLinkedinIcon /></IconAnchor>
                 </IconSlot>
-            </StyledInlineFlexContainer>
+            </StyledFlexContainer>
 
         </PortfolioSection>
 

@@ -20,6 +20,7 @@ import Contact from './Sections/Contact'
 
 // components
 import StyledNavbar from './Components/Navbar'
+import SocialMediaSideBar from './Components/SocialMediaSideBar';
 import face from './res/labroom.png'
 
 const GlobalStyle = createGlobalStyle`
@@ -44,6 +45,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledNavbar />
+        <SocialMediaSideBar />
 
         {/* main container */}
         <PortfolioMain>
