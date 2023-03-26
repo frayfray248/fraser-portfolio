@@ -47,7 +47,6 @@ const App = () => (
         <GlobalStyle />
         <StyledNavbar />
         <SocialMediaSideBar />
-        <Arrow />
 
         {/* main container */}
         <PortfolioMain>

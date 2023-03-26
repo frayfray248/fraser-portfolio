@@ -18,12 +18,13 @@ import { StyledLinkedinIcon, StyledGitHubIcon, StyledEmailIcon } from '../Compon
 
 
 const StyledFlexContainer = styled.div`
-    background-color: ${props => props.theme.sidebar};
-    padding : 10px;
-    margin-top : 10px;
-    border-radius : 15px;
-    box-shadow: 0px 0px 5px 5px ${props => props.theme.sidebar};
-    display: flex;
+background-color: black;
+padding: 10px;
+border: 2px solid lime;
+border-radius: 15px;
+display: flex;
+flex-direction: row;
+gap: 10px;
 
     @media (min-width: 1600px) {
         display: none;
