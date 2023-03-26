@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const StyledSVG = styled.svg`
-    fill: ${props => props.theme.color2};
-    stroke: ${props => props.theme.color2};
+    fill: ${props => props.theme.icon};
+    stroke: ${props => props.theme.icon};
 `
 
 

@@ -3,20 +3,20 @@ import styled from 'styled-components'
 
 const StyledButton = styled(Button)`
     background : none;
-    border: 2px solid ${props => props.theme.color2};
-    color: ${props => props.theme.color2};
+    border: 2px solid ${props => props.theme.button};
+    color: ${props => props.theme.button};
     padding: 20px;
 
     &:hover {
-        background-color: ${props => props.theme.color2};
-        border: 2px solid ${props => props.theme.color2};
+        background-color: ${props => props.theme.button};
+        border: 2px solid ${props => props.theme.button};
         color: ${props => props.theme.color3};
     }
 
     &:active:hover {
-        background-color: ${props => props.theme.color2};
-        border: 2px solid ${props => props.theme.color2};
-        color: ${props => props.theme.color3};
+        background-color: ${props => props.theme.button};
+        border: 2px solid ${props => props.theme.button};
+        color: ${props => props.theme.buttonHover};
     }
 `
 
