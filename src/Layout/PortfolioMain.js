@@ -9,11 +9,11 @@ const StyledMain = styled.main`
     box-sizing: border-box;
     margin: 0 auto;
 
-    @media ${device.mobileS} {
+    @media ${device.min.mobileS} {
         padding: 0px 25px;
     }
 
-    @media ${device.tablet} {
+    @media ${device.min.tablet} {
         padding: 0px 50px;
     }
 

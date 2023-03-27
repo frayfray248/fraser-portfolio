@@ -27,7 +27,7 @@ const Interests = () => {
     return (
         <PortfolioSection sectionId="interests">
             <SectionHeading>Interests</SectionHeading>
-            <PortfolioRow justifyContent="center">
+            <PortfolioRow >
                 <PortfolioCol mWidth={mWidth}>
                     <Interest
                         title="Golf"

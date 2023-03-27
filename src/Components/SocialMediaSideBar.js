@@ -1,7 +1,6 @@
 // libraries
 import { useEffect, useState } from "react";
 import styled from "styled-components"
-import { device } from '../device/device'
 
 // icons
 import { StyledLinkedinIcon, StyledGitHubIcon, StyledEmailIcon } from '../Components/PortfolioIcons'

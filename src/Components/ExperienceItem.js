@@ -7,7 +7,7 @@ const StyledUL = styled.ul`
 `
 
 const StyledP = styled.p`
-    color : ${props => props.theme.headerColor};
+    color : ${props => props.theme.header};
 `
 
 const ExperienceItem = ({position, employer, startDate, endDate, duties}) => {
