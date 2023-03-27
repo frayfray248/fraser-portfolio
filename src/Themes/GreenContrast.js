@@ -22,7 +22,9 @@ const GreenContrast =  {
     bgGradiant2: colors.gray1,
     navGradiant1: colors.gray2,
     navGradiant2: colors.gray1,
-    sidebar: colors.gray1
+    sidebar: colors.gray1,
+    border: colors.lime,
+    navHover: colors.gray3
 }
 
 export default GreenContrast
