@@ -7,7 +7,7 @@ const Nav = styled.nav`
 
     /* default top horizontal navbar */
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
 
     position: fixed;
     top: 0;
@@ -135,6 +135,7 @@ const NavBar = () => {
             <NavItem href="#about" >&lt;About /&gt;</NavItem>
             <NavItem href="#projects" >&lt;Projects /&gt;</NavItem>
             <NavItem href="#skills" >&lt;Skills /&gt;</NavItem>
+            <NavItem href="#experience" >&lt;Experience /&gt;</NavItem>
             <NavItem href="#interests" >&lt;Interests /&gt;</NavItem>
             <NavItem href="#contact" >&lt;Contact /&gt;</NavItem>
             <NavToggle onClick={handleToggle} collapse={collapse}>
