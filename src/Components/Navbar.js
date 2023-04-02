@@ -128,18 +128,18 @@ const NavBar = () => {
 
     const [collapse, setCollapse] = useState(true)
 
-    const handleToggle = (e) => setCollapse(!collapse)
+    const handleNavItemClick= (e) => setCollapse(!collapse)
 
     return (
-        <Nav collapse={collapse}>
-            <NavItem href="/"><Brand /></NavItem>
-            <NavItem href="#about" >&lt;About /&gt;</NavItem>
-            <NavItem href="#projects" >&lt;Projects /&gt;</NavItem>
-            <NavItem href="#skills" >&lt;Skills /&gt;</NavItem>
-            <NavItem href="#experience" >&lt;Experience /&gt;</NavItem>
-            <NavItem href="#interests" >&lt;Interests /&gt;</NavItem>
-            <NavItem href="#contact" >&lt;Contact /&gt;</NavItem>
-            <NavToggle onClick={handleToggle} collapse={collapse}>
+        <Nav collapse={collapse}>  
+            <NavItem onClick={handleNavItemClick} href="/"><Brand /></NavItem>
+            <NavItem onClick={handleNavItemClick} href="#about" >&lt;About /&gt;</NavItem>
+            <NavItem onClick={handleNavItemClick} href="#projects" >&lt;Projects /&gt;</NavItem>
+            <NavItem onClick={handleNavItemClick} href="#skills" >&lt;Skills /&gt;</NavItem>
+            <NavItem onClick={handleNavItemClick} href="#experience" >&lt;Experience /&gt;</NavItem>
+            <NavItem onClick={handleNavItemClick} href="#interests" >&lt;Interests /&gt;</NavItem>
+            <NavItem onClick={handleNavItemClick} href="#contact" >&lt;Contact /&gt;</NavItem>
+            <NavToggle onClick={handleNavItemClick} collapse={collapse}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-chevron-double-down" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
