@@ -79,10 +79,11 @@ const NavItem = styled.a`
     text-decoration: none;
     color: white;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     background-size: 200% 100%;
     background-position: bottom right;
     transition: all .7s ease-out;
+
   
     /* pseudo element for expanding underline on mouse over */
     &::after {
