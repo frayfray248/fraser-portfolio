@@ -110,17 +110,25 @@ const NavItem = styled.a`
 const NavToggle = styled.div`
     display: none;
     position: absolute;
-    left: 50%;
-    bottom: -50px;
+    left: 46%;
+    bottom: -75px;
     color: lime;
     cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid lime;
+    border-radius: 15px;
 
     @media ${device.max.tablet} {
         display: block;
     }
 
-    transform : rotate(${props => props.collapse ? "0deg" : "180deg"});
-    transition-duration: 1s;
+    & > svg {
+        transform : rotate(${props => props.collapse ? "0deg" : "180deg"});
+        transition-duration: 1s;
+    }
+
+    
 
 `
 
@@ -139,6 +147,7 @@ const NavBar = () => {
             <NavItem onClick={handleNavItemClick} href="#experience" >&lt;Experience /&gt;</NavItem>
             <NavItem onClick={handleNavItemClick} href="#interests" >&lt;Interests /&gt;</NavItem>
             <NavItem onClick={handleNavItemClick} href="#contact" >&lt;Contact /&gt;</NavItem>
+
             <NavToggle onClick={handleNavItemClick} collapse={collapse}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-chevron-double-down" viewBox="0 0 16 16">
