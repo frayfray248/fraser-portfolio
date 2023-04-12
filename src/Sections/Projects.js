@@ -12,6 +12,7 @@ import evolutionSimPic from '../res/EvolutionSimProjectPic.png'
 import fraserPortfolioProjectPic from '../res/FraserPortfolioProjectPic.png'
 import RealmCraftPortfolioPic from '../res/RealmCraftPortfolioPic.png'
 import NeoMerchantPortfolioPic from '../res/NeoMerchantPortfolioPic.png'
+import chatroomsPortfolioProjectPic from '../res/chatroomsPortfolioProjectPic.png'
 
 
 // Description:
@@ -23,12 +24,26 @@ const Projects = () => {
         <PortfolioSection sectionId="projects">
             <SectionHeading>Projects</SectionHeading>
             <PortfolioRow justifyContent="start">
+            
                 <Project
                     title='Three Trees Calendar'
                     img={threeTreesPic}
                     description='A class/workshop manager WordPress plugin'
                     projectUrl="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
                     mainLink="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php"
+                />
+                <Project
+                    title='Chat Rooms'
+                    img={chatroomsPortfolioProjectPic}
+                    description='A chatroom web application'
+                    mainLink={"https://github.com/frayfray248/chat-rooms"}
+                    repoUrl={"https://github.com/frayfray248/chat-rooms"}
+                    links={[
+                        {
+                            url: "https://chat-rooms.fly.dev/",
+                            iconIndex: 2,
+                        }]}
+
                 />
                 <Project
                     title='NeoMerchant'
