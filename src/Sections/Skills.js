@@ -77,7 +77,7 @@ const skillsData = [
 const Skills = () => (
     <PortfolioSection sectionId="skills">
         <SectionHeading>Skills</SectionHeading>
-        <PortfolioRow>
+        <PortfolioRow justifyContent="start">
             {skillsData.map((skill, index) =>
                 <PortfolioCol key={index} mWidth="300">
                     <Skill name={skill.name} description={skill.description} iconId={skill.iconId} links={skill.links}/>
