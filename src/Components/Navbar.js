@@ -3,6 +3,7 @@ import Brand from "./Brand"
 import { device } from "../device/device";
 import { useState } from "react";
 
+
 const Nav = styled.nav`
 
     /* default top horizontal navbar */

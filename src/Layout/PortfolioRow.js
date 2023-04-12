@@ -5,7 +5,7 @@ const PortfolioRow = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: ${props => props.justifyContent};
+    justify-content: ${props => props.justifyContent ? props.justifyContent : "center"};
 `
 
 export default PortfolioRow

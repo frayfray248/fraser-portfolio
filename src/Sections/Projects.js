@@ -22,7 +22,7 @@ const Projects = () => {
     return (
         <PortfolioSection sectionId="projects">
             <SectionHeading>Projects</SectionHeading>
-            <PortfolioRow>
+            <PortfolioRow justifyContent="start">
                 <Project
                     title='Three Trees Calendar'
                     img={threeTreesPic}

@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 const StyledH1 = styled.h1`
 
+    text-align: center;
+
     @media (max-width: 768px) {
         font-size: 13vw;
     }

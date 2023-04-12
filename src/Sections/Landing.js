@@ -16,7 +16,7 @@ const Landing = ({ img }) => {
     return (
         <PortfolioSection>
             <SectionHeading>FRASER MACALLUM</SectionHeading>
-            <PortfolioRow>
+            <PortfolioRow justifyContent="center">
                 <PortfolioCol>
                     <PortfolioText type="highlight" size="2">
                         Web development is my hobby, my joy, and my future.
